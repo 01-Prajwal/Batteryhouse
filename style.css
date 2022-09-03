@@ -189,44 +189,39 @@ header .navbar ul li a:hover{
     background: var(--yellow);
 }
 
-.Product.box-container .box-container{
+.box-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
+
 }
 .Product .box-container .box{
-    height: 20re;
-    width: 26rem;
+    height: 100%;
+    width: 100%;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
 }
-.Product.box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.img{
+    height: 50%;
+    width: 20vw;
+    /* object-fit: cover; */
 }
 .Product.box-container .box-container .box:hover img{
     transform: scale(1.2);
 }
 
-.Contact .row{
+.row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.Contact .row .content{
+.content{
     flex:1 1 30rem;
     padding:4rem;
     padding-bottom: 0;
 }
-
-.Contact .row >form{
+form{
     flex:1 1 45rem;
     padding:2rem;
     margin:2rem;
@@ -286,7 +281,18 @@ i{
     color:yellow;
 }
 
+.para{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+}
+.para>p{
+    color: #eee;
+    width: 40vw;
+    text-align: center;
+    font-size: 20px;
+}
 
 
 @media(max-width:1200px){
